@@ -61,6 +61,31 @@ nav details summary{
   color: white;
 }
 
+summary {
+margin-block-end: 1.5rem;
+margin-block-start: 1rem;
+}
+.variants{
+  margin-block-end: 80px;
+  margin-block-start: 24px;
+}
+
+.variants a{
+display: block;
+line-height: 24px;
+margin-block-end: 0.5rem;
+margin-block-start: 0.5rem;
+}
+
+.variants a:hover{
+  background-color: #000000;
+  padding-inline-end: 0.5rem;
+  padding-inline-start: 0.5rem;
+  padding-block-start: 0.5rem;
+  padding-block-end: 0.5rem;
+  color:rgb(255, 255, 255);
+}
+
 h1{
   font-size: 40px;
   margin-block-start: 20px;
@@ -142,7 +167,7 @@ blockquote{
   margin-block-start: 80px;
   margin-block-end: 63px;
   background-color: var(--white10);
-  border-radius: 8px;
+  /*border-radius: 8px;*/
   line-height: 32px;
   font-size: 24px;
   /*padding: 24px;*/
@@ -259,5 +284,4 @@ h1{
   margin-block-start: 64px;
 }
 }
-
 
