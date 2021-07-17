@@ -1,7 +1,7 @@
 :root{
-  font-size: 16px;
-  --gray30: #424242;
-  --gray20: #212121;
+  font-size: 18px;
+  --gray30: #212121;
+  --gray20: #212429;
   --gray10: #616161;
 }
 
@@ -13,13 +13,17 @@ body{
 color: var(--gray30);
 font-family: 'Roboto', sans-serif;
 margin: 0;
-line-height: 24px;
 
+}
+b{
+  color:#5551ff;
 }
 
 a{
-  color: var(--gray10);
-  text-decoration: none;
+  color: var(--gray30);
+}
+p{
+  line-height: 24px;
 }
 
 header{
@@ -42,40 +46,39 @@ header a{
   text-decoration: none;
 }
 header a:hover{
-  color: var(--gray20);
+  color: var(--gray30);
 }
 
 header li{
   margin-bottom: 16px;
 }
 
-nav{
-  width:320px;
+nav details summary{
+  font-weight: bold;
+  line-height: 24px;
 }
+
 
 
 
 h1{
   font-size: 60px;
-  color: var(--gray20);
   margin-top: 64px;
-
+  margin-bottom: 16px;
   font-weight: normal;
   /*margin-left: 20px;
   margin-right: 10px;
   /* margin: top right bottom left; */
 
 }
-h1 ~ p {
-  margin-bottom: 32px;
-  line-height:24px;
-  color: var(--gray20);
-
-}
+/*h1 ~ p {
+  margin-bottom: 64px;*/
 
 hr{
   margin-bottom: 64px;
+  margin-top: 64px;
 }
+
 h2{
   font-size: 2em;
   margin: 64px 0 40px;
@@ -92,24 +95,35 @@ h3{
   background: white;
 }
 pre{
-  background:#E5E5E5;
+  background: white;
   padding: 40px;
   font-family:'Roboto';
   line-height: 24px;
+  border: 8px solid #5551FF;
+  box-shadow: -10px 10px 0px #ABAAF6;
+  border-radius: 8px;
 
 }
 
 blockquote {
-  font-size: 16px;
+
   margin: 32px 0;
   padding-left: 16px;
-  line-height: 16px;
+  line-height: 24px;
   /*border: 10px solid red;*/
-  border-left: 4px solid var(--gray30);
+  border-left: 4px solid #5551ff;
+  margin-block-start: 80px;
+  margin-block-end: 63px;
+  background-color: var(--white10);
+  /*border-radius: 8px;*/
+  line-height: 32px;
+  font-size: 16px;
+  /*padding: 24px;*/
   width: 400px;
   height: 64px;
-}
+  margin-inline-start: 200px;
 
+}
 blockquote span {
   color: var(--gray10)
 }
@@ -117,36 +131,24 @@ blockquote span::before{
   content: '-';
 }
 
-h4{
-  font-size: 14px;
-  color: #616161;
-  text-transform: uppercase;
-  font-weight: 400;
-  margin-block: 1rem;
-}
-
-h5{
+summary {
 margin-block-end: 1.5rem;
-font-size: 14px;
-color:#616161;
+margin-block-start: 1rem;
 }
-
 .variants{
-  margin-block-end: 6rem;
+  margin-block-end: 80px;
   margin-block-start: 24px;
 }
 
 .variants a{
-color: #616161;
 display: block;
 line-height: 24px;
 margin-block-end: 0.5rem;
 margin-block-start: 0.5rem;
-text-decoration: none;
 }
 
 .variants a:hover{
-  background-color: #000000;
+  background-color: #5551ff;
   padding-inline-end: 0.5rem;
   padding-inline-start: 0.5rem;
   padding-block-start: 0.5rem;
@@ -154,35 +156,20 @@ text-decoration: none;
   color:rgb(255, 255, 255);
 }
 
-.variants h5{
-  font-weight: normal;
-  color: #616161;
-  font-size: 14px;
-}
-.nav{
-  border-left: 4px solid #c4c4c4;
-  padding-left: 1rem;
-
+.nemiumc{
+  position: absolute;
+  top:0;
+  left: 70rem;
+  width: 188px;
 }
 
-.nav a {
-  line-height: 2rem;
-
-}
-
-ol{
-  padding-left: 1rem;
-  color:#616161;
-}
-
-.header{
-  /*border: 1px solid red;*/
-  position: sticky;
-  top: 0;
+.section-nemiun{
+  text-align: center;
 }
 
 .header-content{
   position: relative;
+
 
 }
 .main{
@@ -205,22 +192,32 @@ ol{
   /*outline: 1px solid red;*/
   /*box-shadow: inset 0 0 0 50px red;*/
 
+.hero{
+  background-image: linear-gradient( rgba(74, 0, 224, 0.6) 5%, rgba(142, 45, 226, 0.5) 130.61%, transparent), url("../images/patron-2.png");
+  height: 350px;
+/*   background-repeat: no-repeat;*/
+/*   background-position: left 50px bottom 50px;*/
+/*   background-size: cover;*/
+}
 
 .section-content {
   /*margin-top: 164px;*/
   position: relative;
+  text-align: center;
 }
 
 .section-content:first-of-type{
   margin: 0;
 }
 
-.section-content ol li {
+.section-contents ol li {
  line-height: 24px;
+
 }
 
-.section-content ul li {
+.section-contents ul li {
   margin-bottom: 16px;
+  line-height: 24px;
 }
 
 .section-content + hr {
@@ -255,22 +252,12 @@ ol{
   left: 0;
   bottom: 0;*/
 
-blockquote{
-  margin-block-start: 80px;
-  margin-block-end: 63px;
-  background-color: var(--white10);
-  /*border-radius: 8px;*/
-  /*line-height: 32px;*/
-  /*font-size: 24px;*/
-  /*padding: 24px;*/
-
-}
 
 blockquote p{
   color: var(--white30);
 }
 .main hr{
-  display: none;
+  display:block;
 }
 
 .wrapper{
@@ -318,8 +305,11 @@ blockquote p{
   display: inline-block;
   inline-size: 15px;
   block-size: 15px;
-  background: #42424233;
+  background: #5551ff;
   border-radius: 50%;
+}
+.form {
+  position: relative;
 }
 .form input{
   width: 232px;
@@ -335,13 +325,9 @@ blockquote p{
   position:relative;
 }
 
-form{
-  position:relative;
-}
-
 .form input[type="button"]
 {
-  background: #000000;
+  background: #5551ff;;
   color: #FFFFFF;
   position: absolute;
   width: 119px;
@@ -371,7 +357,7 @@ form{
   inset-block-start: 65px;
   padding-inline: 0px;
 }
-}
+
 header{
   position: absolute;
   inset-block-start: 0;
@@ -383,7 +369,7 @@ h1{
   font-size: 60px;
   margin-block-start: 64px;
 }
-
+}
 
 
 
