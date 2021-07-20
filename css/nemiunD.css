@@ -56,6 +56,7 @@ header li{
 nav details summary{
   font-weight: bold;
   line-height: 24px;
+
 }
 
 
@@ -338,6 +339,28 @@ blockquote p{
 
 .form input ::-webkit-input-placeholder{
   color: var(--white20);
+
+}
+
+footer{
+background-color: #000000;
+text-align: center;
+;
+
+}
+.footer-content{
+  padding-block: 3rem;
+}
+.footer-content h2 {
+  color: #FFFFFF;
+  margin-block: 1rem;
+  font-size: 32px;
+
+
+}
+
+.footer-content img{
+  margin-inline: 1rem;
 
 }
 

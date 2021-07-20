@@ -30,8 +30,7 @@ margin: 0;
 a{
   color: var(--white30);
 }
-.header{
-}
+
 
 .header-content{
   padding-inline: 20px;
@@ -253,6 +252,27 @@ blockquote p{
 }
 .form input ::-webkit-input-placeholder{
   color: var(--white20);
+
+}
+footer{
+background-color: var(--white30);
+text-align: center;
+
+}
+.footer-content{
+  padding-block: 3rem;
+}
+.footer-content h2 {
+  color: #251F24;
+  margin-block: 1rem;
+  font-size: 32px;
+
+
+}
+
+.footer-content img{
+  margin-inline: 1rem;
+
 }
 
 @media screen and (min-width: 1366px ) {

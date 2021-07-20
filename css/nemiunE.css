@@ -263,6 +263,27 @@ line-height: 32px;
   color: var(--white20);
 }
 
+footer{
+background-color:#EEBBC3;
+text-align: center;
+
+}
+.footer-content{
+  padding-block: 3rem;
+}
+.footer-content h2 {
+  color: #232946;
+  margin-block: 1rem;
+  font-size: 32px;
+
+
+}
+
+.footer-content img{
+  margin-inline: 1rem;
+
+}
+
 @media screen and (min-width: 1366px ) {
 
   .hero{

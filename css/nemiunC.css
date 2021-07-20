@@ -354,6 +354,27 @@ form{
   color: var(--white20);
 
 }
+footer{
+background-color: #212429;
+text-align: center;
+
+}
+.footer-content{
+  padding-block: 3rem;
+}
+
+.footer-content h2 {
+  color: #FFFFFF;
+  margin-block: 1rem;
+  font-size: 32px;
+
+
+}
+
+.footer-content img{
+  margin-inline: 1rem;
+
+}
 
 @media screen and (min-width: 1366px ) {
 
