@@ -1,9 +1,7 @@
-
-
 :root{
-  font-size: 18px;
-  --gray30: #212121;
-  --gray20: #212429;
+  font-size: 16px;
+  --gray30: #424242;
+  --gray20: #212121;
   --gray10: #616161;
 }
 
@@ -15,11 +13,13 @@ body{
 color: var(--gray30);
 font-family: 'Roboto', sans-serif;
 margin: 0;
+line-height: 24px;
 
 }
 
 a{
-  color: var(--gray30);
+  color: var(--gray10);
+  text-decoration: none;
 }
 
 header{
@@ -42,32 +42,36 @@ header a{
   text-decoration: none;
 }
 header a:hover{
-  color: var(--gray30);
+  color: var(--gray20);
 }
 
 header li{
   margin-bottom: 16px;
 }
 
-nav details summary{
-  font-weight: bold;
-  line-height: 24px;
+nav{
+  width:320px;
 }
 
 
 
 h1{
   font-size: 60px;
+  color: var(--gray20);
   margin-top: 64px;
-  margin-bottom: 16px;
+
   font-weight: normal;
   /*margin-left: 20px;
   margin-right: 10px;
   /* margin: top right bottom left; */
 
 }
-/*h1 ~ p {
-  margin-bottom: 64px;*/
+h1 ~ p {
+  margin-bottom: 32px;
+  line-height:24px;
+  color: var(--gray20);
+
+}
 
 hr{
   margin-bottom: 64px;
@@ -88,7 +92,7 @@ h3{
   background: white;
 }
 pre{
-  background: #FEC62E;
+  background:#E5E5E5;
   padding: 40px;
   font-family:'Roboto';
   line-height: 24px;
@@ -96,12 +100,14 @@ pre{
 }
 
 blockquote {
-  font-size: 24px;
+  font-size: 16px;
   margin: 32px 0;
   padding-left: 16px;
-  line-height: 24px;
+  line-height: 16px;
   /*border: 10px solid red;*/
   border-left: 4px solid var(--gray30);
+  width: 400px;
+  height: 64px;
 }
 
 blockquote span {
@@ -111,20 +117,32 @@ blockquote span::before{
   content: '-';
 }
 
-summary {
-margin-block-end: 1.5rem;
-margin-block-start: 1rem;
+h4{
+  font-size: 14px;
+  color: #616161;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-block: 1rem;
 }
+
+h5{
+margin-block-end: 1.5rem;
+font-size: 14px;
+color:#616161;
+}
+
 .variants{
-  margin-block-end: 80px;
+  margin-block-end: 6rem;
   margin-block-start: 24px;
 }
 
 .variants a{
+color: #616161;
 display: block;
 line-height: 24px;
 margin-block-end: 0.5rem;
 margin-block-start: 0.5rem;
+text-decoration: none;
 }
 
 .variants a:hover{
@@ -135,6 +153,28 @@ margin-block-start: 0.5rem;
   padding-block-end: 0.5rem;
   color:rgb(255, 255, 255);
 }
+
+.variants h5{
+  font-weight: normal;
+  color: #616161;
+  font-size: 14px;
+}
+.nav{
+  border-left: 4px solid #c4c4c4;
+  padding-left: 1rem;
+
+}
+
+.nav a {
+  line-height: 2rem;
+
+}
+
+ol{
+  padding-left: 1rem;
+  color:#616161;
+}
+
 .header{
   /*border: 1px solid red;*/
   position: sticky;
@@ -165,13 +205,6 @@ margin-block-start: 0.5rem;
   /*outline: 1px solid red;*/
   /*box-shadow: inset 0 0 0 50px red;*/
 
-.hero{
-  background-image: linear-gradient(to top, rgba(255,255,255, .3), transparent) , url('../images/pattern.png');
-  height: 350px;
-/*   background-repeat: no-repeat;*/
-/*   background-position: left 50px bottom 50px;*/
-/*   background-size: cover;*/
-}
 
 .section-content {
   /*margin-top: 164px;*/
@@ -227,8 +260,8 @@ blockquote{
   margin-block-end: 63px;
   background-color: var(--white10);
   /*border-radius: 8px;*/
-  line-height: 16px;
-  font-size: 16px;
+  /*line-height: 32px;*/
+  /*font-size: 24px;*/
   /*padding: 24px;*/
 
 }
@@ -288,11 +321,6 @@ blockquote p{
   background: #42424233;
   border-radius: 50%;
 }
-
-.form{
-  position:relative;
-}
-
 .form input{
   width: 232px;
   border: 1px solid #616161;
@@ -304,6 +332,10 @@ blockquote p{
   margin-block-end: 24px;
   font-size: 16px;
   margin-inline-start: 18px;
+  position:relative;
+}
+
+form{
   position:relative;
 }
 
@@ -322,15 +354,15 @@ blockquote p{
   color: var(--white20);
 
 }
-
 footer{
-background-color: var(--gray20);
+background-color: #212429;
 text-align: center;
 
 }
 .footer-content{
   padding-block: 3rem;
 }
+
 .footer-content h2 {
   color: #FFFFFF;
   margin-block: 1rem;
@@ -343,6 +375,7 @@ text-align: center;
   margin-inline: 1rem;
 
 }
+
 @media screen and (min-width: 1366px ) {
 
   .hero{
@@ -359,7 +392,7 @@ text-align: center;
   inset-block-start: 65px;
   padding-inline: 0px;
 }
-
+}
 header{
   position: absolute;
   inset-block-start: 0;
@@ -371,7 +404,7 @@ h1{
   font-size: 60px;
   margin-block-start: 64px;
 }
-}
+
 
 
 

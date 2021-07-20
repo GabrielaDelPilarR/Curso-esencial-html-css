@@ -1,5 +1,3 @@
-
-
 :root{
   font-size: 18px;
   --gray30: #212121;
@@ -17,9 +15,15 @@ font-family: 'Roboto', sans-serif;
 margin: 0;
 
 }
+b{
+  color:#5551ff;
+}
 
 a{
   color: var(--gray30);
+}
+p{
+  line-height: 24px;
 }
 
 header{
@@ -52,7 +56,9 @@ header li{
 nav details summary{
   font-weight: bold;
   line-height: 24px;
+
 }
+
 
 
 
@@ -71,7 +77,9 @@ h1{
 
 hr{
   margin-bottom: 64px;
+  margin-top: 64px;
 }
+
 h2{
   font-size: 2em;
   margin: 64px 0 40px;
@@ -88,22 +96,35 @@ h3{
   background: white;
 }
 pre{
-  background: #FEC62E;
+  background: white;
   padding: 40px;
   font-family:'Roboto';
   line-height: 24px;
+  border: 8px solid #5551FF;
+  box-shadow: -10px 10px 0px #ABAAF6;
+  border-radius: 8px;
 
 }
 
 blockquote {
-  font-size: 24px;
+
   margin: 32px 0;
   padding-left: 16px;
   line-height: 24px;
   /*border: 10px solid red;*/
-  border-left: 4px solid var(--gray30);
-}
+  border-left: 4px solid #5551ff;
+  margin-block-start: 80px;
+  margin-block-end: 63px;
+  background-color: var(--white10);
+  /*border-radius: 8px;*/
+  line-height: 32px;
+  font-size: 16px;
+  /*padding: 24px;*/
+  width: 400px;
+  height: 64px;
+  margin-inline-start: 200px;
 
+}
 blockquote span {
   color: var(--gray10)
 }
@@ -128,21 +149,28 @@ margin-block-start: 0.5rem;
 }
 
 .variants a:hover{
-  background-color: #000000;
+  background-color: #5551ff;
   padding-inline-end: 0.5rem;
   padding-inline-start: 0.5rem;
   padding-block-start: 0.5rem;
   padding-block-end: 0.5rem;
   color:rgb(255, 255, 255);
 }
-.header{
-  /*border: 1px solid red;*/
-  position: sticky;
-  top: 0;
+
+.nemiumc{
+  position: absolute;
+  top:0;
+  left: 70rem;
+  width: 188px;
+}
+
+.section-nemiun{
+  text-align: center;
 }
 
 .header-content{
   position: relative;
+
 
 }
 .main{
@@ -166,7 +194,7 @@ margin-block-start: 0.5rem;
   /*box-shadow: inset 0 0 0 50px red;*/
 
 .hero{
-  background-image: linear-gradient(to top, rgba(255,255,255, .3), transparent) , url('../images/pattern.png');
+  background-image: linear-gradient( rgba(74, 0, 224, 0.6) 5%, rgba(142, 45, 226, 0.5) 130.61%, transparent), url("../images/patron-2.png");
   height: 350px;
 /*   background-repeat: no-repeat;*/
 /*   background-position: left 50px bottom 50px;*/
@@ -176,18 +204,21 @@ margin-block-start: 0.5rem;
 .section-content {
   /*margin-top: 164px;*/
   position: relative;
+  text-align: center;
 }
 
 .section-content:first-of-type{
   margin: 0;
 }
 
-.section-content ol li {
+.section-contents ol li {
  line-height: 24px;
+
 }
 
-.section-content ul li {
+.section-contents ul li {
   margin-bottom: 16px;
+  line-height: 24px;
 }
 
 .section-content + hr {
@@ -222,22 +253,12 @@ margin-block-start: 0.5rem;
   left: 0;
   bottom: 0;*/
 
-blockquote{
-  margin-block-start: 80px;
-  margin-block-end: 63px;
-  background-color: var(--white10);
-  /*border-radius: 8px;*/
-  line-height: 16px;
-  font-size: 16px;
-  /*padding: 24px;*/
-
-}
 
 blockquote p{
   color: var(--white30);
 }
 .main hr{
-  display: none;
+  display:block;
 }
 
 .wrapper{
@@ -285,14 +306,12 @@ blockquote p{
   display: inline-block;
   inline-size: 15px;
   block-size: 15px;
-  background: #42424233;
+  background: #5551ff;
   border-radius: 50%;
 }
-
-.form{
-  position:relative;
+.form {
+  position: relative;
 }
-
 .form input{
   width: 232px;
   border: 1px solid #616161;
@@ -309,7 +328,7 @@ blockquote p{
 
 .form input[type="button"]
 {
-  background: #000000;
+  background: #5551ff;;
   color: #FFFFFF;
   position: absolute;
   width: 119px;
@@ -324,8 +343,9 @@ blockquote p{
 }
 
 footer{
-background-color: var(--gray20);
+background-color: #000000;
 text-align: center;
+;
 
 }
 .footer-content{
@@ -343,6 +363,7 @@ text-align: center;
   margin-inline: 1rem;
 
 }
+
 @media screen and (min-width: 1366px ) {
 
   .hero{
