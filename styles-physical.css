@@ -151,8 +151,9 @@ margin-block-start: 0.5rem;
 
 
 .wrapper{
-  width: 902px;
+  max-width: 902px;
   margin: auto;
+
 }
  .main-content{
    /*padding: 20px;*/
@@ -243,7 +244,7 @@ blockquote p{
 .wrapper{
   /*border: 1px solid yellow;*/
   max-inline-size: 902px;
-  /*max-width: 902px;*/
+
   /*block-size: 100px; */
   margin: auto;
 }
